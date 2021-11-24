@@ -13,7 +13,7 @@ export default {
     let socket = null;
     const message = ref([]);
     onMounted(() => {
-      socket = io("ws://www.liulongbin.top:9999");
+      socket = io("ws://192.168.1.199:8080/websocket");
       //   建立连接事件
       socket.on("connect", () => console.log("connect: websocket 连接成功！"));
       // 关闭连接的事件

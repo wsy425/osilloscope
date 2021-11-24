@@ -2,6 +2,7 @@
   <div>
     <HelloWorld />
     <WebSocket />
+    <!-- <Excel /> -->
   </div>
 </template>
 
@@ -9,11 +10,13 @@
 import { Options, Vue } from "vue-class-component";
 import HelloWorld from "./components/HelloWorld.vue";
 import WebSocket from "./components/WebSocket.vue";
+import Excel from "./components/Excel.vue";
 
 @Options({
   components: {
     HelloWorld,
     WebSocket,
+    Excel,
   },
 })
 export default class App extends Vue {}
